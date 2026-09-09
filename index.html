@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKP TRANSPORTS - Reliable Transportation Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;700&family=Noto+Sans+Tamil:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="assets/logo-2.png">
+    <link rel="apple-touch-icon" href="assets/logo-2.png">
+     <script type="text/javascript">
+    function zforms_open_window(url, height, width) {
+      var leftPos = 0;
+      var topPos = 0;
+      if (screen) {
+        leftPos = (screen.width - width) / 2;
+        topPos = (screen.height - height) / 2;
+        window.open(url, null, 'width=' + width + ',height=' + height + ',left=' + leftPos + ',top=' + topPos + ', toolbar=0, location=0, status=1, scrollbars=1, resizable=1');
+      }
+    }
+  </script>
+</head>
+<body>
+    <!-- Header -->
+       
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.jpg" alt="KKP Transports Logo" class="logo">
+                    <span class="logo-text" data-en="KKP TRANSPORTS" data-ta="KKP டிரான்ஸ்போர்ட்ஸ்" data-hi="KKP ट्रांसपोर्ट्स">KKP TRANSPORTS</span>
+                </div>
+                 <!--<div class="hamburger" id="hamburger">☰</div>-->
+                  
+               
+             <!-- Mobile Menu Toggle -->
+                <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            <!-- Language Buttons -->
+                 <div class="language-selector">
+                    <button class="lang-btn active" onclick="switchLanguage('en')">English</button>
+                    <button class="lang-btn" onclick="switchLanguage('ta')">தமிழ்</button>
+                    <button class="lang-btn" onclick="switchLanguage('hi')">हिंदी</button>
+                </div>
+                
+                <!-- Navigation Menu -->
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link" data-en="Home" data-ta="முகப்பு" data-hi="होम">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-en="About Us" data-ta="எங்களைப் பற்றி" data-hi="हमारे बारे में">About Us</a></li>
+                    <li><a href="#services" class="nav-link" data-en="Services" data-ta="சேவைகள்" data-hi="सेवाएं">Services</a></li>
+                    <li><a href="#fleet"  class="nav-link"data-en="Our Vechicles" data-ta="எங்கள் வாகனங்கள்" data-hi="हमारा बेड़ा">Our Fleet</a></li>
+                    <li><a href="#careers" class="nav-link" data-en="Careers" data-ta="வேலைவாய்ப்புகள்" data-hi="करियर">Careers</a></li>
+                    <li><a href="#clients" class="nav-link"data-en="Clients" data-ta="வாடிக்கையாளர்கள்" data-hi="ग्राहक">Clients</a></li>
+                    <li><a href="#contact" class="nav-link" data-en="Contact" data-ta="தொடர்பு" data-hi="संपर्क">Contact</a></li>
+                </ul>
+             
+            </div>
+        </nav>
+    </header>
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en=" Our Story" data-ta="எங்கள் கதையைப் பாருங்கள்" data-hi="हमारी कहानी देखें"> Our Story</h2>
+                <p data-en="See how KKP Transports delivers excellence in every journey"
+                   data-ta="KKP டிரான்ஸ்போர்ட்ஸ் ஒவ்வொரு பயணத்திலும் எவ்வாறு சிறப்பை வழங்குகிறது என்பதைப் பாருங்கள்"
+                   data-hi="देखें कि KKP ट्रांसपोर्ट्स हर यात्रा में कैसे उत्कृष्टता प्रदान करता है">
+                   See how KKP Transports delivers excellence in every journey
+                </p>
+            </div>
+            <div class="video-container">
+                    <iframe
+                        id="myVideo"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/leV3RApUzq4?autoplay=0&mute=0&controls=1&playsinline=1"
+                        title="Your Video Title"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                </video>
+              <script>
+                    const video = document.getElementById('myVideo');
+
+                    function unmuteAndPlay() {
+                        if (video.muted) {
+                        video.muted = false;
+                        video.play();
+                        window.removeEventListener('click', unmuteAndPlay);
+                        window.removeEventListener('scroll', unmuteAndPlay);
+                        }
+                    }
+
+                    // Wait for user interaction to unmute and play with sound
+                    window.addEventListener('click', unmuteAndPlay);
+                    window.addEventListener('scroll', unmuteAndPlay);
+                    document.addEventListener('DOMContentLoaded', function () {
+                    const video = document.getElementById('myVideo');
+                    // Your event listeners here
+                });
+                window.addEventListener('load', () => {
+                const video = document.getElementById('myVideo');
+                if (video) {
+                    video.play().catch(() => {
+                    // Autoplay rejected, user interaction required.
+                    });
+                }
+                });
+
+
+
+                    // Optionally, play muted video on page load (some browsers block autoplay without muted)
+                    window.addEventListener('load', () => {
+                        video.play().catch(() => {
+                        // Autoplay failed, user interaction required
+                        });
+                    });
+                    </script>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 data-en="Reliable Transportation Solutions Across India" 
+                    data-ta="இந்தியா முழுவதும் நம்பகமான போக்குவரத்து தீர்வுகள்" 
+                    data-hi="भारत भर में विश्वसनीय परिवहन समाधान">
+                    Reliable Transportation Solutions Across India
+                </h1>
+                <p class="hero-bold" data-en="20+ years of excellence in goods transportation with GPS tracking and experienced drivers" 
+                   data-ta="20+ ஆண்டுகள் சரக்கு போக்குவரத்தில் சிறப்பு, GPS கண்காணிப்பு மற்றும் அனுபவமிக்க ஓட்டுநர்கள்" 
+                   data-hi="GPS ट्रैकिंग और अनुभवी ड्राइवरों के साथ माल परिवहन में 25+ वर्षों की उत्कृष्टता">
+                   20+ years of excellence in goods transportation with GPS tracking and experienced drivers
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">72,000+</span>
+                        <span class="stat-text" data-en="Total Deliveries" data-ta="மொத்த டெலிவரி" data-hi="कुल डिलीवरी">Total Deliveries</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-text" data-en="Vehicles" data-ta="வாகனங்கள்" data-hi="वाहन">Vehicles</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">10</span>
+                        <span class="stat-text" data-en="AverageDaily Deliveries" data-ta="தினசரி டெலிவரி" data-hi="दैनिक डिलीवरी"> Average Daily Deliveries</span>
+                    </div>
+                </div>
+                <!-- Add this animated info box below stats -->
+               <!-- <div class="hero-info-box">
+                    
+
+                  <div class="hero-pop-box" 
+
+                  
+                    data-en="For over 20 years, we have been proudly serving as a trusted transport partner to leading companies across the industry. We would be delighted to associate with your esteemed organisation and humbly request an opportunity to offer our transport services. Our transport service stands as a testament to meticulous planning, prompt service, and secure delivery. Basing ourselves on the principle that “Time is commitment,” we provide our services reliably and efficiently according to your required schedule. Our main objective – “On Time Delivery with Zero Damage.” We are wholeheartedly prepared to establish a long-term partnership for the growth of your company. Our vehicles are tracked using GPS and monitored closely by experienced drivers, ensuring the safe handling of goods. The greatest appreciation we receive from our customers is, “Trust & Precision”… this is our true capital. It is both an honor and an opportunity for us to join and move forward with a growth-oriented organization like yours."
+                    data-ta="20 ஆண்டுகளுக்கும் மேலாக, தொழில்துறையின் முன்னணி நிறுவனங்களுக்கு நம்பகமான போக்குவரத்து கூட்டாளியாக பெருமையாக சேவை செய்து வருகிறோம். உங்கள் மதிப்புமிக்க நிறுவனத்துடன் இணைந்து, எங்கள் போக்குவரத்து சேவைகளை வழங்கும் வாய்ப்பை பணிவுடன் கோருகிறோம். எங்கள் போக்குவரத்து சேவை திட்டமிடல், விரைவான சேவை மற்றும் பாதுகாப்பான விநியோகத்தின் சான்றாக உள்ளது. “நேரம் என்பது அர்ப்பணிப்பு” என்ற கொள்கையை அடிப்படையாக கொண்டு, உங்கள் தேவையான நேர அட்டவணைக்கு ஏற்ப நம்பகமாகவும் திறமையாகவும் எங்கள் சேவைகளை வழங்குகிறோம். எங்கள் முக்கிய நோக்கம் – “சேதமின்றி நேரத்தில் விநியோகம்.” உங்கள் நிறுவன வளர்ச்சிக்காக நீண்ட கால கூட்டுறவை உருவாக்க எங்கள் முழு மனதுடன் தயாராக இருக்கிறோம். எங்கள் வாகனங்கள் GPS மூலம் கண்காணிக்கப்படுகின்றன மற்றும் அனுபவமுள்ள ஓட்டுநர்களால் நன்கு மேற்பார்வை செய்யப்படுகின்றன, இது சரக்குகளின் பாதுகாப்பான கையாளுதலை உறுதி செய்கிறது. வாடிக்கையாளர்களிடமிருந்து எங்களுக்கு கிடைக்கும் மிகப்பெரிய பாராட்டு “நம்பிக்கை மற்றும் துல்லியம்”… இதுவே எங்கள் உண்மையான மூலதனம். உங்கள் போன்ற வளர்ச்சி நோக்குள்ள நிறுவனத்துடன் இணைந்து முன்னேறுவது எங்களுக்கு பெருமையும் வாய்ப்பும் ஆகும்."
+                    data-hi="20 वर्षों से अधिक समय से, हम उद्योग की अग्रणी कंपनियों के लिए एक विश्वसनीय परिवहन भागीदार के रूप में गर्व से सेवा कर रहे हैं। हम आपकी प्रतिष्ठित संस्था से जुड़ने और अपनी परिवहन सेवाएं प्रदान करने का अवसर विनम्रतापूर्वक अनुरोध करते हैं। हमारी परिवहन सेवा सावधानीपूर्वक योजना, त्वरित सेवा और सुरक्षित डिलीवरी का प्रमाण है। “समय ही प्रतिबद्धता है” इस सिद्धांत के आधार पर, हम आपकी आवश्यक समय-सारणी के अनुसार अपनी सेवाएं विश्वसनीय और कुशलता से प्रदान करते हैं। हमारा मुख्य उद्देश्य – “समय पर डिलीवरी, बिना किसी नुकसान के।” हम आपकी कंपनी की वृद्धि के लिए दीर्घकालिक साझेदारी स्थापित करने के लिए पूरी तरह तैयार हैं। हमारे वाहनों को GPS से ट्रैक किया जाता है और अनुभवी ड्राइवरों द्वारा निकटता से मॉनिटर किया जाता है, जिससे माल की सुरक्षित हैंडलिंग सुनिश्चित होती है। हमारे ग्राहकों से हमें जो सबसे बड़ी सराहना मिलती है, वह है “विश्वास और सटीकता”… यही हमारी असली पूंजी है। आपकी जैसी विकासोन्मुख संस्था के साथ जुड़ना और आगे बढ़ना हमारे लिए सम्मान और अवसर दोनों है।"
+                >
+                    For over 20 years, we have been proudly serving as a trusted transport partner to leading companies across the industry. We would be delighted to associate with your esteemed organisation and humbly request an opportunity to offer our transport services. Our transport service stands as a testament to meticulous planning, prompt service, and secure delivery. Basing ourselves on the principle that <strong>“Time is commitment,” </strong>we provide our services reliably and efficiently according to your required schedule. <strong>main objective – “On Time Delivery with Zero Damage.”</strong>  We are wholeheartedly prepared to establish a long-term partnership for the growth of your company. Our vehicles are tracked using GPS and monitored closely by experienced drivers, ensuring the safe handling of goods. The greatest appreciation we receive from our customers is, “Trust & Precision”… this is our true capital. It is both an honor and an opportunity for us to join and move forward with a growth-oriented organization like yours.
+               >
+                   
+                  </div>
+                </div> -->
+                  <hr class="hero-divider"><br>
+                <a href="#contact" class="cta-button" data-en="Get Quote" data-ta="மேற்கோள் பெறுக" data-hi="कोटेशन पाएं">Get Quote</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+    <div class="container">
+        <div class="section-header">
+            <h2 data-en="About KKP Transports" data-ta="KKP டிரான்ஸ்போர்ட்ஸ் பற்றி" data-hi="KKP ट्रांसपोर्ट्स के बारे में">About KKP Transports</h2>
+        </div>
+        <div class="about-content">
+            <div class="about-main">
+                <div class="about-transport">
+                    <h3 data-en="About Us" data-ta="எங்களை பற்றி" data-hi="हमारे बारे में">About Us</h3>
+                    <p
+                        data-en="For over 20 years, we have been a trusted transport partner delivering timely, secure, and efficient services. We pride ourselves on “On Time Delivery with Zero Damage” and GPS-monitored vehicles driven by experienced drivers. Our commitment to meticulous planning and prompt service has earned us our customers’ trust and appreciation. We look forward to a long-term partnership for your company’s growth."
+                        data-ta="20 ஆண்டுகளுக்கு மேலாக, நாங்கள் நேர்மையான, பாதுகாப்பான மற்றும் திறமையான போக்குவரத்து சேவைகளை அளிக்கும் நம்பகமான போக்குவரத்து கூட்டாளராக இருக்கிறோம். “பிழையின்றி நேரத்துக்குள் விநியோகம்” என்பதில் நாங்கள் பெருமைபடுகிறோம், GPS மூலம் கண்காணிக்கப்படும் வாகனங்கள் மற்றும் அனுபவசாலித் தொகுப்பாளர்கள் மூலம் இயக்கப்படுகின்றன. நுணுக்கமான திட்டமிடல் மற்றும் உடனடி சேவைக்கு எங்கள் அர்ப்பணிப்பு வாடிக்கையாளர்களின் நம்பிக்கையையும் பாராட்டையும் பெற்றுள்ளது. உங்கள் நிறுவனத்தின் வளர்ச்சிக்காக நீண்டகால கூட்டிணைப்பை எதிர்நோக்குகிறோம்."
+                        data-hi="20 वर्षों से अधिक समय से, हम समयनिष्ठ, सुरक्षित और कुशल परिवहन सेवाओं के विश्वसनीय साझेदार रहे हैं। हम 'शून्य क्षति के साथ समय पर डिलीवरी' पर गर्व करते हैं, हमारे वाहन GPS द्वारा निगरानी किए जाते हैं और अनुभवी ड्राइवर द्वारा संचालित होते हैं। हमारी सूक्ष्म योजना और त्वरित सेवा ने हमारे ग्राहकों का विश्वास और प्रशंसा अर्जित की है। हम आपकी कंपनी की वृद्धि के लिए दीर्घकालिक साझेदारी की अपेक्षा करते हैं।"
+                    >
+                        For over 20 years, we have been a trusted transport partner delivering timely, secure, and efficient services. We pride ourselves on “On Time Delivery with Zero Damage” and GPS-monitored vehicles driven by experienced drivers. Our commitment to meticulous planning and prompt service has earned us our customers’ trust and appreciation. We look forward to a long-term partnership for your company’s growth.
+                    </p>
+                </div>
+                <div class="vision">
+                    <h3 data-en="Our Vision" data-ta="எங்கள் பார்வை" data-hi="हमारी दृष्टि">Our Vision</h3>
+                    <p data-en="Our vision is to operate a disciplined company in the goods transport sector, leading the way to improvement for prompt and efficient service and to uphold a reputation of reliability and strict business ethics."
+                       data-ta="சரக்கு போக்குவரத்து துறையில் ஒரு ஒழுக்கமான நிறுவனத்தை நடத்துவதும், உடனடி மற்றும் திறமையான சேவைக்கான முன்னேற்றத்திற்கு வழிகாட்டுவதும், நம்பகத்தன்மை மற்றும் கடுமையான வணிக நெறிமுறைகளின் நற்பெயரை நிலைநிறுத்துவதும் எங்கள் நோக்கமாகும்."
+                       data-hi="हमारी दृष्टि माल परिवहन क्षेत्र में एक अनुशासित कंपनी का संचालन करना है, त्वरित और कुशल सेवा के लिए सुधार का मार्ग प्रशस्त करना और विश्वसनीयता और कड़े व्यावसायिक नैतिकता की प्रतिष्ठा को बनाए रखना है।">
+                       Our vision is to operate a disciplined company in the goods transport sector, leading the way to improvement for prompt and efficient service and to uphold a reputation of reliability and strict business ethics.
+                    </p>
+                </div>
+                <div class="mission">
+                    <h3 data-en="Our Mission" data-ta="எங்கள் நோக்கம்" data-hi="हमारा मिशन">Our Mission</h3>
+                    <p data-en="We are committed to continuous improvement in goods transportation and offer superior quality of services standard to customer with the strength of vast experience and knowledge, customer to save their valuable time and resources for developing their business."
+                       data-ta="சரக்கு போக்குவரத்தில் தொடர்ச்சியான முன்னேற்றத்திற்கு நாங்கள் உறுதியளிக்கிறோம் மற்றும் பரந்த அனுபவம் மற்றும் அறிவின் வலிமையுடன் வாடிக்கையாளருக்கு உயர்ந்த தரமான சேவைகளை வழங்குகிறோம்."
+                       data-hi="हम माल परिवहन में निरंतर सुधार के लिए प्रतिबद्ध हैं और व्यापक अनुभव और ज्ञान की शक्ति के साथ ग्राहकों को उच्च गुणवत्ता की सेवाएं प्रदान करते हैं।">
+                       We are committed to continuous improvement in goods transportation and offer superior quality of services standard to customer with the strength of vast experience and knowledge, customer to save their valuable time and resources for developing their business.
+                    </p>
+                </div>
+            </div>
+            <div class="about-ceo">
+                <div class="ceo-image">
+                    <img src="assets/passport.jpg" alt="CEO" class="ceo-photo">
+                </div>
+                <div class="ceo-details">
+                    <div class="ceo-name" data-en="K.K.PANNEER SELVAM" data-ta="கே. கே. பன்னீர் செல்வம்" data-hi="के. के. पनीर सेल्वम">Mr.K.K.PANNEER SELVAM</div>
+                    <div class="ceo-title" data-en="Founder & CEO" data-ta="நிறுவனர் மற்றும் தலைமை செயலாளர்" data-hi="संस्थापक और मुख्य कार्यकारी अधिकारी ">Founder & CEO</div>
+                    <div class="ceo-experience" data-en="20+ Years in Transportation Industry" data-ta="போக்குவரத்து துறையில் 20+ ஆண்டுகள்" data-hi="परिवहन उद्योग में 20+ वर्ष">20+ Years in Transportation Industry</div>
+                    <div class="ceo-info">
+                        <h3 data-en="Leadership" data-ta="தலைமை" data-hi="नेतृत्व">Leadership</h3>
+                        <p data-en="Under experienced leadership, KKP Transports has grown to become a trusted name in transportation services across India."
+                           data-ta="அனுபவமிக்க தலைமையின் கீழ், KKP டிரான்ஸ்போர்ட்ஸ் இந்தியா முழுவதும் போக்குவரத்து சேவைகளில் நம்பகமான பெயராக வளர்ந்துள்ளது."
+                           data-hi="अनुभवी नेतृत्व के तहत, KKP ट्रांसपोर्ट्स भारत भर में परिवहन सेवाओं में एक विश्वसनीय नाम बन गया है।">
+                           Under experienced leadership, KKP Transports has grown to become a trusted name in transportation services across India.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="motto">
+            <h3 data-en="Our Motto" data-ta="எங்கள் குறிக்கோள்" data-hi="हमारा आदर्श वाक्य">Our Motto</h3>
+            <p class="motto-text" data-en="Safe and Fast!" data-ta="பாதுகாப்பான மற்றும் வேகமான!" data-hi="सुरक्षित और तेज़!">Safe and Fast!</p>
+        </div>
+        <div class="company-info">
+            <h3 data-en="Company Particulars" data-ta="நிறுவன விவரங்கள்" data-hi="कंपनी का विवरण">Company Particulars</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong data-en="Established:" data-ta="நிறுவப்பட்டது:" data-hi="स्थापित:">Established:</strong>
+                    <span>2005 (20+ years experience)</span>
+                </div>
+                <div class="info-item">
+                    <strong data-en="Registration:" data-ta="பதிவு:" data-hi="पंजीकरण:">Registration:</strong>
+                    <span>358/2011</span>
+                </div>
+                <div class="info-item">
+                    <strong>PAN Number:</strong>
+                    <span>AALFK4322J</span>
+                </div>
+                <div class="info-item">
+                    <strong>GSTIN Number:</strong>
+                    <span>33AALFK4322J1ZE</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Our Services" data-ta="எங்கள் சேவைகள்" data-hi="हमारी सेवाएं">Our Services</h2>
+                <p data-en="We provide comprehensive transportation solutions with GPS tracking and experienced drivers"
+                   data-ta="GPS கண்காணிப்பு மற்றும் அனுபவமிக்க ஓட்டுநர்களுடன் நாங்கள் விரிவான போக்குவரத்து தீர்வுகளை வழங்குகிறோம்"
+                   data-hi="हम GPS ट्रैकिंग और अनुभवी ड्राइवरों के साथ व्यापक परिवहन समाधान प्रदान करते हैं">
+                   We provide comprehensive transportation solutions with GPS tracking and experienced drivers
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                 <div class="service-card">
+                <div class="service-icon">
+                       <img src="assets/truckwhite.png" alt="Truck Service" class="service-img" />
+                   </div>
+                 <h3 data-en="Open Trucks" data-ta="திறந்த லாரிகள்" data-hi="खुले ट्रक">Open Body Vehicles</h3>
+                    <p data-en="From 1.5 ton pickups to 35 ton multi-axle trucks for diverse cargo needs"
+                       data-ta="1.5 டன் பிக்கப்களிலிருந்து 35 டன் பல அச்சு டிரக்குகள் வரை பல்வேறு சரக்கு தேவைகளுக்கு"
+                       data-hi="विविध कार्गो जरूरतों के लिए 1.5 टन पिकअप से 35 टन मल्टी-एक्सल ट्रकों तक">
+                       From 1.5 ton pickups to 35 ton multi-axle trucks for diverse cargo needs
+                    </p>
+                </div>
+                  <div class="service-card">
+                     <div class="service-icon">
+                       <img src="assets/trailervehicle.png" alt="Truck Service" class="service-img trailer-img" />
+                   </div>
+                     <h3 data-en="Trailer Services" data-ta="டிரெய்லர் சேவைகள்" data-hi="ट्रेलर सेवाएं">Trailer Services</h3>
+                    <p data-en="40ft trailers, low bed, high bed, and semi bed trailers for heavy cargo"
+                       data-ta="கனமான சரக்குகளுக்கான 40 அடி டிரெய்லர்கள், குறைந்த படுக்கை, உயர் படுக்கை மற்றும் அரை படுக்கை டிரெய்லர்கள்"
+                       data-hi="भारी कार्गो के लिए 40 फुट ट्रेलर, लो बेड, हाई बेड और सेमी बेड ट्रेलर">
+                       40ft trailers, low bed, high bed, and semi bed trailers for heavy cargo
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3 data-en="Container Transportation" data-ta="கொள்கலன் போக்குவரத்து" data-hi="कंटेनर परिवहन">Container Transportation</h3>
+                    <p data-en="20ft and 32ft container vehicles for secure cargo transportation"
+                       data-ta="பாதுகாப்பான சரக்கு போக்குவரத்துக்கான 20 அடி மற்றும் 32 அடி கொள்கலன் வாகனங்கள்"
+                       data-hi="सुरक्षित कार्गो परिवहन के लिए 20 फुट और 32 फुट कंटेनर वाहन">
+                       20ft and 32ft container vehicles for secure cargo transportation
+                    </p>
+                </div>
+                
+             <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-satellite-dish"></i>
+                    </div>
+                    <h3 data-en="GPS Tracking" data-ta="GPS கண்காணிப்பு" data-hi="GPS ट्रैकिंग">GPS Tracking</h3>
+                    <p data-en="Real-time tracking system for complete visibility of your cargo"
+                       data-ta="உங்கள் சரக்கின் முழுமையான தெரிவுநிலைக்கான நிகழ்நேர கண்காணிப்பு அமைப்பு"
+                       data-hi="आपके कार्गो की पूर्ण दृश्यता के लिए रियल-टाइम ट्रैकिंग सिस्टम">
+                       Real-time tracking system for complete visibility of your cargo
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Our Fleet" data-ta="எங்கள் வாகனங்கள்" data-hi="हमारा बेड़ा">Our Fleet</h2>
+            </div>
+            
+            <div class="fleet-categories">
+                  <div class="fleet-category">
+                    <h3 data-en="Open Trucks" data-ta="திறந்த லாரிகள்" data-hi="खुले ट्रक">Open Trucks</h3>
+                    <div class="vehicle-list">
+                        <div class="vehicle-item">
+                            <img src="assets/1.5t.png" alt="Pickup" class="rectangle-img">
+                            <span  class="vehicle-name" data-en="Pickup - 1.5 ton" data-ta="பிக்கப் - 1.5 டன்" data-hi="पिकअप - 1.5 टन">Pickup - 1.5 ton</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <img src="assets/eicher7ton.jpg" alt="Eicher" class="vehicle-photo">
+                            <span  class="vehicle-name" data-en="Eicher - 7 ton" data-ta="ஐச்சர் - 7 டன்" data-hi="आइकर - 7 टन">Eicher - 7 ton</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <img src="assets/ecomet10.jpg" alt="E.comet" class="vehicle-photo">
+                            <span  class="vehicle-name" data-en="E.comet - 10 ton" data-ta="ஈ.காமெட் - 10 டன்" data-hi="ई.कॉमेट - 10 टन">E.comet - 10 ton</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <img src="assets/tarasnew.jpg" alt="Taras" class="vehicle-photo">
+                            <span  class="vehicle-name" data-en="Taras - 19 ton" data-ta="டாரஸ் - 19 டன்" data-hi="तारास - 19 टन">Taras - 19 ton</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <img src="assets/12wheelnew.jpg" alt="12 wheel" class="rectangle-img">
+                            <span  class="vehicle-name" data-en="12 wheel - 25 ton" data-ta="12 சக்கரம் - 25 டன்" data-hi="12 पहिया - 25 टन">12 wheel - 25 ton</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <img src="assets/14w.png" alt="14 wheel" class="rectangle-img">
+                            <span  class="vehicle-name" data-en="14 wheel - 30 ton" data-ta="14 சக்கரம் - 30 டன்" data-hi="14 पहिया - 30 टन">14 wheel - 30 ton</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <img src="assets/16w.png" alt="16 wheel" class="rectangle-img">
+                            <span  class="vehicle-name" data-en="16 wheel - 35 ton" data-ta="16 சக்கரம் - 35 டன்" data-hi="16 पहिया - 35 टन">16 wheel - 35 ton</span>
+                        </div>
+                         
+                    </div>
+                </div>
+                
+               <!-- <div class="fleet-category">
+                    <h3 data-en="Trailer Vehicles" data-ta="டிரெய்லர் வாகனங்கள்" data-hi="ट्रेलर वाहन">Trailer Vehicles</h3>
+                    <div class="vehicle-list">
+                        <div class="vehicle-item">
+                            <img src="assets/40ft.jpg" alt="40ft Trailer" class="rectangle-img">
+                            <span  class="vehicle-name" data-en="40 Feet Trailer" data-ta="40 அடி டிரெய்லர்" data-hi="40 फुट ट्रेलर">40 Feet Trailer</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <img src="assets/lowbed.jpg" alt="Low Bed Trailer" class="rectangle-img">
+                            <span  class="vehicle-name" data-en="Low Bed Trailer" data-ta="குறைந்த படுக்கை டிரெய்லர்" data-hi="लो बेड ट्रेलर">Low Bed Trailer</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <img src="assets/highbed.jpg" alt="High Bed Trailer" class="vehicle-photo">
+                            <span  class="vehicle-name" data-en="High Bed Trailer" data-ta="உயர் படுக்கை டிரெய்லர்" data-hi="हाई बेड ट्रेलर">High Bed Trailer</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <img src="assets/semi.jpg" alt="Semi Bed Trailer" class="rectangle-img">
+                            <span  class="vehicle-name" data-en="Semi Bed Trailer" data-ta="அரை படுக்கை டிரெய்லர்" data-hi="सेमी बेड ट्रेलर">Semi Bed Trailer</span>
+                        </div>
+                    </div>
+                </div> -->
+                 <h3 data-en="Container Vehicles" data-ta="கொள்கலன் வாகனங்கள்" data-hi="कंटेनर वाहन">Container Vehicles</h3>
+                    <div class="vehicle-list">
+                        <div class="vehicle-item">
+                            <img src="assets/20ft.jpg" alt="20ft Container" class="vehicle-photo">
+                            <span  class="vehicle-name" data-en="20 Feet Container" data-ta="20 அடி கொள்கலன்" data-hi="20 फुट कंटेनर">20 Feet Container</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <img src="assets/32feet.jpg" alt="32ft Container" class="vehicle-photo">
+                            <span  class="vehicle-name" data-en="32 Feet Container" data-ta="32 அடி கொள்கலன்" data-hi="32 फुट कंटेनर">32 Feet Container</span>
+                        </div>
+                        <div class="vehicle-item">
+                            <img src="assets/trailer1.png" alt="16 wheel" class="vehicle-photo">
+                            <span  class="vehicle-name" data-en="Trailer" data-ta="டிரெய்லர் லாரி" data-hi=" ट्रेलर ट्रक">Trailer</span>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+        <div class="all-vehicles-box">
+            <span class="all-vehicles-text">All Types of Vehicles Available</span>
+        </div>
+    </section>
+
+    <!-- Careers Section -->
+    <section id="careers" class="careers">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Join Our Team" data-ta="எங்கள் குழுவில் சேருங்கள்" data-hi="हमारी टीम से जुड़ें">Join Our Team</h2>
+                <p data-en="We are always looking for dedicated professionals to join our growing transportation family"
+                   data-ta="எங்கள் வளர்ந்து வரும் போக்குவரத்து குடும்பத்தில் சேர நாங்கள் எப்போதும் அர்ப்பணிப்பு மிக்க நிபுணர்களைத் தேடுகிறோம்"
+                   data-hi="हम अपने बढ़ते परिवहन परिवार में शामिल होने के लिए हमेशा समर्पित पेशेवरों की तलाश में रहते हैं">
+                   We are always looking for dedicated professionals to join our growing transportation family
+                </p>
+            </div>
+            
+            <div class="jobs-grid">
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 data-en="Experienced Truck Driver" data-ta="அனுபவமிக்க டிரக் ஓட்டுநர்" data-hi="अनुभवी ट्रक ड्राइवर">Experienced Truck Driver</h3>
+                        <span class="job-type" data-en="Full Time" data-ta="முழு நேரம்" data-hi="पूर्णकालिक">Full Time</span>
+                    </div>
+                    <div class="job-details">
+                        <p><strong data-en="Experience:" data-ta="அனுபவம்:" data-hi="अनुभव:">Experience:</strong> <span data-en="5+ years in heavy vehicle driving" data-ta="கனரக வாகன ஓட்டுதலில் 5+ ஆண்டுகள்" data-hi="भारी वाहन चलाने में 5+ वर्ष">5+ years in heavy vehicle driving</span></p>
+                        <p><strong data-en="Requirements:" data-ta="தேவைகள்:" data-hi="आवश्यकताएं:">Requirements:</strong> <span data-en="Valid commercial driving license, clean driving record" data-ta="செல்லுபடியாகும் வணிக ஓட்டுநர் உரிமம், சுத்தமான ஓட்டுநர் பதிவு" data-hi="वैध वाणिज्यिक ड्राइविंग लाइसेंस, साफ ड्राइविंग रिकॉर्ड">Valid commercial driving license, clean driving record</span></p>
+                        <p><strong data-en="Salary:" data-ta="சம்பளம்:" data-hi="वेतन:">Salary:</strong> <span data-en="₹25,000 - ₹35,000/month" data-ta="₹25,000 - ₹35,000/மாதம்" data-hi="₹25,000 - ₹35,000/महीना">₹25,000 - ₹35,000/month</span></p>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 data-en="Fleet Manager" data-ta="வாகனப் படை மேலாளர்" data-hi="फ्लीट मैनेजर">Fleet Manager</h3>
+                        <span class="job-type" data-en="Full Time" data-ta="முழு நேரம்" data-hi="पूर्णकालिक">Full Time</span>
+                    </div>
+                    <div class="job-details">
+                        <p><strong data-en="Experience:" data-ta="அனுபவம்:" data-hi="अनुभव:">Experience:</strong> <span data-en="3+ years in logistics management" data-ta="தளவாட நிர்வாகத்தில் 3+ ஆண்டுகள்" data-hi="लॉजिस्टिक्स प्रबंधन में 3+ वर्ष">3+ years in logistics management</span></p>
+                        <p><strong data-en="Requirements:" data-ta="தேவைகள்:" data-hi="आवश्यकताएं:">Requirements:</strong> <span data-en="Bachelor's degree, knowledge of GPS tracking systems" data-ta="இளங்கலை பட்டம், GPS கண்காணிப்பு அமைப்புகளின் அறிவு" data-hi="स्नातक की डिग्री, GPS ट्रैकिंग सिस्टम का ज्ञान">Bachelor's degree, knowledge of GPS tracking systems</span></p>
+                        <p><strong data-en="Salary:" data-ta="சம்பளம்:" data-hi="वेतन:">Salary:</strong> <span data-en="₹30,000 - ₹45,000/month" data-ta="₹30,000 - ₹45,000/மாதம்" data-hi="₹30,000 - ₹45,000/महीना">₹30,000 - ₹45,000/month</span></p>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 data-en="Customer Service Executive" data-ta="வாடிக்கையாளர் சேவை நிர்வாகி" data-hi="ग्राहक सेवा कार्यकारी">Customer Service Executive</h3>
+                        <span class="job-type" data-en="Full Time" data-ta="முழு நேரம்" data-hi="पूर्णकालिक">Full Time</span>
+                    </div>
+                    <div class="job-details">
+                        <p><strong data-en="Experience:" data-ta="அனுபவம்:" data-hi="अनुभव:">Experience:</strong> <span data-en="2+ years in customer service" data-ta="வாடிக்கையாளர் சேவையில் 2+ ஆண்டுகள்" data-hi="ग्राहक सेवा में 2+ वर्ष">2+ years in customer service</span></p>
+                        <p><strong data-en="Requirements:" data-ta="தேவைகள்:" data-hi="आवश्यकताएं:">Requirements:</strong> <span data-en="Excellent communication skills, multilingual preferred" data-ta="சிறந்த தொடர்பு திறன், பன்மொழி விருப்பம்" data-hi="उत्कृष्ट संचार कौशल, बहुभाषी पसंदीदा">Excellent communication skills, multilingual preferred</span></p>
+                        <p><strong data-en="Salary:" data-ta="சம்பளம்:" data-hi="वेतन:">Salary:</strong> <span data-en="₹18,000 - ₹25,000/month" data-ta="₹18,000 - ₹25,000/மாதம்" data-hi="₹18,000 - ₹25,000/महीना">₹18,000 - ₹25,000/month</span></p>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 data-en="Warehouse Supervisor" data-ta="கிடங்கு மேற்பார்வையாளர்" data-hi="गोदाम पर्यवेक्षक">Warehouse Supervisor</h3>
+                        <span class="job-type" data-en="Full Time" data-ta="முழு நேரம்" data-hi="पूर्णकालिक">Full Time</span>
+                    </div>
+                    <div class="job-details">
+                        <p><strong data-en="Experience:" data-ta="அனுபவம்:" data-hi="अनुभव:">Experience:</strong> <span data-en="4+ years in warehouse operations" data-ta="கிடங்கு நடவடிக்கைகளில் 4+ ஆண்டுகள்" data-hi="गोदाम संचालन में 4+ वर्ष">4+ years in warehouse operations</span></p>
+                        <p><strong data-en="Requirements:" data-ta="தேவைகள்:" data-hi="आवश्यकताएं:">Requirements:</strong> <span data-en="Leadership skills, inventory management experience" data-ta="தலைமைத்துவ திறன், சரக்கு நிர்வாக அனுபவம்" data-hi="नेतृत्व कौशल, इन्वेंटरी प्रबंधन का अनुभव">Leadership skills, inventory management experience</span></p>
+                        <p><strong data-en="Salary:" data-ta="சம்பளம்:" data-hi="वेतन:">Salary:</strong> <span data-en="₹22,000 - ₹32,000/month" data-ta="₹22,000 - ₹32,000/மாதம்" data-hi="₹22,000 - ₹32,000/महीना">₹22,000 - ₹32,000/month</span></p>
+                    </div>
+                </div>
+
+                <div class="job-card">
+                    <div class="job-header">
+                        <h3 data-en="Maintenance Technician" data-ta="பராமரிப்பு தொழில்நுட்பவியலாளர்" data-hi="रखरखाव तकनीशियन">Maintenance Technician</h3>
+                        <span class="job-type" data-en="Full Time" data-ta="முழு நேரம்" data-hi="पूर्णकालिक">Full Time</span>
+                    </div>
+                    <div class="job-details">
+                        <p><strong data-en="Experience:" data-ta="அனுபவம்:" data-hi="अनुभव:">Experience:</strong> <span data-en="3+ years in vehicle maintenance" data-ta="வாகன பராமரிப்பில் 3+ ஆண்டுகள்" data-hi="वाहन रखरखाव में 3+ वर्ष">3+ years in vehicle maintenance</span></p>
+                        <p><strong data-en="Requirements:" data-ta="தேவைகள்:" data-hi="आवश्यकताएं:">Requirements:</strong> <span data-en="Technical certification, heavy vehicle repair experience" data-ta="தொழில்நுட்ப சான்றிதழ், கனரக வாகன பழுதுபார்ப்பு அனுபவம்" data-hi="तकनीकी प्रमाणन, भारी वाहन मरम्मत का अनुभव">Technical certification, heavy vehicle repair experience</span></p>
+                        <p><strong data-en="Salary:" data-ta="சம்பளம்:" data-hi="वेतन:">Salary:</strong> <span data-en="₹20,000 - ₹30,000/month" data-ta="₹20,000 - ₹30,000/மாதம்" data-hi="₹20,000 - ₹30,000/महीना">₹20,000 - ₹30,000/month</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="career-contact">
+                <h3 data-en="Apply Now" data-ta="இப்போது விண்ணப்பிக்கவும்" data-hi="अभी आवेदन करें">Apply Now</h3>
+                <p data-en="Send your resume to" data-ta="உங்கள் விண்ணப்பத்தை அனுப்பவும்" data-hi="अपना रिज्यूमे भेजें">Send your resume to</p>
+                <a href="mailto:kkptransports@gmail.com" class="career-email">kkptransports@gmail.com</a>
+                <p data-en="or call us at" data-ta="அல்லது எங்களை அழைக்கவும்" data-hi="या हमें फोन करें">or call us at</p>
+                <a href="tel:+919487560072" class="career-phone">+91 9487560072</a>
+                <a href="tel:+919600853572" class="career-phone">+91 9600853572</a>
+            </div>
+        </div>
+    </section>
+     
+    <!-- Clients Section -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-en="Our Valued Clients" data-ta="எங்கள் மதிப்புமிக்க வாடிக்கையாளர்கள்" data-hi="हमारे मूल्यवान ग्राहक">Our Valued Clients</h2>
+            </div>
+            
+            <div class="clients-grid">
+                
+                <div class="client-card">
+                    <img src="assets/windia.png" alt="Client Logo" class="client-logo client-logo-rect">
+                    <h3>Windia Chemicals Pvt Ltd</h3>
+                </div>
+                <div class="client-card">
+                     <img src="assets/vectus.jpg" alt="Client Logo" class="client-logo client-logo-rect">
+                    <h3>Vectus Ploymers Private Limited</h3>
+                </div>
+                <div class="client-card">
+                    <img src="assets/mm.jpg" alt="Client Logo" class="client-logo">
+                    <h3>M.M.Forgings Limited</h3>
+                </div>
+                 <div class="client-card">
+                    <img src="assets/trichy.jpg" alt="Client Logo" class="client-logo">
+                    <h3>Trichy Metals and Alloys</h3>
+                </div>
+                  <div class="client-card">
+                      <img src="assets/abi.png" alt="Client Logo" class="client-logo client-logo-rect">
+                    <h3>Abhinava Metaliks Pvt Ltd</h3>
+                </div>
+                 <div class="client-card">
+                      <img src="assets/rk.png" alt="Client Logo" class="client-logo client-logo-rect"> 
+                    <h3>RK Metals Roofings Private ltd</h3>
+                </div>
+                <div class="client-card">
+                    <img src="assets/arise.png" alt="Client Logo" class="client-logo">
+                    <h3>Arise Industries and Agency Pvt Ltd</h3>
+                </div>
+               
+                 <div class="client-card">
+                      <img src="assets/swelect.jpg" alt="Client Logo" class="client-logo">
+                    <h3>Swelect Energy Systems Limited</h3>
+                </div>
+                <div class="client-card">
+                      <img src="assets/bengal.png" alt="Client Logo" class="client-logo client-logo-rect">
+                    <h3>Bengal Packs Pvt Ltd</h3>
+                </div>
+                <div class="client-card">
+                      <img src="assets/bentoli.png" alt="Client Logo" class="client-logo client-logo-rect">
+                    <h3>Bentoli Agrinutrition Pvt ltd</h3>
+                </div>
+               
+                <div class="client-card">
+                      <img src="assets/arvind.png" alt="Client Logo" class="client-logo">
+                    <h3>Aravind Engineering Private Limited</h3>
+                </div>
+              
+                <div class="client-card">
+                    <img src="assets/ideal.jpg" alt="Client Logo" class="client-logo">
+                    <h3>Ideal Drymixes (India) Pvt Ltd</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+    <div class="section-header">
+      <h2 data-en="Contact Us" data-ta="தொடர்பு" data-hi="संपर्क करें">Contact Us</h2>
+      <hr class="section-divider" />
+    </div>
+    <div class="contact-grid">
+  <!-- Row 1 -->
+  <div class="contact-col">
+    <div class="contact-box">
+      <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div>
+        <h3 data-en="Head Office" data-ta="தலைமை அலுவல்" data-hi="मुख्यालय">Head Office</h3>
+        <p data-en="KKP TRANSPORTS ,
+        Old Sugar Mill Opposite,
+        Thuraiyur Road
+        Musiri, Trichy District,
+        Tamil Nadu 621211"
+               data-ta="கேகேபி டிரான்ஸ்போர்ட்ஸ்,
+               பழைய சர்க்கரை ஆலைக்கு எதிரில்,
+               துரையூர் சாலை
+               முசிரி, திருச்சி மாவட்டம்,
+               தமிழ்நாடு 621211"
+               data-hi="केकेपी ट्रांसपोर्ट्स,
+                पुरानी शुगर मिल के सामने,
+                थुरैयूर रोड,
+                मुसिरी, तिरुचिरापल्ली ज़िला,
+                तमिलनाडु – 621211">
+          KKP TRANSPORTS,<br>
+          Old Sugar Mill Opposite,<br>
+          Thuraiyur Road<br>
+          Musiri, Trichy District,<br>
+          Tamil Nadu 621211
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="contact-col">
+    <div class="contact-box">
+      <div class="contact-icon"><i class="fas fa-phone"></i></div>
+      <div>
+        <h3 data-en="Phone Numbers-Head Office" data-ta="தொலைபேசி எண்கள்-தலைமை அலுவல்" data-hi="फोन नंबर-मुख्यालय">Phone Numbers-Head Office</h3>
+        <p>
+          <a href="tel:+919487560072">+91 9487560072</a><br>
+          <a href="tel:+919487560072">+91 9543560072</a><br>
+          <a href="tel:+919543560072">+91 9345096974</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row-separator"></div>
+  <!-- Row 2 -->
+   <div class="contact-col">
+    <div class="contact-box">
+      <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+      <div>
+       <h3 data-en="Branch Office" data-ta="கிளை அலுவல்" data-hi="शाखा कार्यालय">Branch Office</h3>
+                <p data-en="Building Door No : 982/16,
+                Rasanayakanpatti,
+                Near Boothagudi Toll Plazza,
+                Viralimalai TK,
+                Pudukkottai District,
+                Pin- 621316" 
+                data-ta="கதவு எண் 982/16, 
+                ராசநாயக்கன்பட்டி, 
+                பூதக்குடி கிராமம், 
+                டோல் பிளாசா அருகில், 
+                விராலிமலை, 
+                புதுக்கோட்டை மாவட்டம், 
+                621316" 
+                data-hi="भवन द्वार संख्या : 982/16, 
+                रासनायकनपट्टी, 
+                भूतकुडी टोल प्लाज़ा के पास, 
+                विरालिमलाई तहसील, 
+                पुदुक्कोट्टै जिला, 
+                पिन- 621316">
+                Building Door No : 982/16,<br>
+                Rasanayakanpatti,<br>
+                Near Boothagudi Toll Plazza,<br>
+                Viralimalai TK,<br>
+                Pudukkottai District,<br>
+                Pin- 621316
+                </p>
+
+      </div>
+    </div>
+  </div>
+  <div class="contact-col">
+    <div class="contact-box">
+      <div class="contact-icon"><i class="fas fa-phone"></i></div>
+      <div>
+        <h3 data-en="Phone Numbers-Branch Office" data-ta="தொலைபேசி எண்கள்-கிளை அலுவல்" data-hi="फोन नंबर-शाखा कार्यालय">Phone Numbers-Branch Office</h3>
+        <p>
+          <a href="tel:+919487560072">+91 9487560072</a><br>
+          <a href="tel:+919487560072">+91 9345096971</a><br>
+          <a href="tel:+919543560072">+91 9443260072</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row-separator"></div>
+  <!--Row 3-->
+  <div class="contact-col">
+    <div class="contact-box">
+      <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+      <div>
+        <h3 data-en="Email" data-ta="மின்னஞ்சல்" data-hi="ईमेल">Email</h3>
+        <p><a href="mailto:kkptransports@gmail.com">kkptransports@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+  <div class="contact-col">
+    <div class="contact-box quote-box">
+      <div>
+       <div class="icon-and-title">
+            <div class="contact-icon"><i class="fas fa-file-alt"></i></div>
+            <h3 data-en="Get a Quote" data-ta="மேலதிக தகவலுக்கு" data-hi="कोटेशन प्राप्त करें">Get a Quote</h3>
+        </div>
+        <p data-en="Please feel free to contact us. Kindly fill this form."
+             data-ta="எங்களை தொடர்பு கொள்ளத் தயங்க வேண்டாம். தயவுசெய்து இந்த படிவத்தை பூர்த்தி செய்யவும்."
+             data-hi="कृपया हमसे संपर्क करने में संकोच न करें। कृपया इस फॉर्म को भरें।">Please feel free to contact us. Kindly fill this form.</p>
+         <a href='https://forms.zohopublic.in/officekkplog1/form/KKPTRANSPORTS/formperma/KtBqpNRWSHsqY2r4uYcbfgXPzhVliFHLrTdGyhY3vbo' 
+            title="KKP TRANSPORTS" 
+            target='_blank' 
+            onclick="zforms_open_window(this.href, 648, 700); return false" 
+            class="cta-button"
+            data-en="Open Enquiry Form"
+            data-ta="ஆய்வள கருத்து படிவத்தை திறக்கவும்"
+            data-hi="इन्क्वायर फॉर्म खोलें">Open Enquiry Form</a>
+      </div>
+    </div>
+  </div>
+</div>
+    </section>
+
+    <!-- Footer -->
+  <footer class="footer">
+    
+    <div class="footer-copyright"
+        data-en="© 2025 KKP TRANSPORTS. All rights reserved."
+        data-ta="© 2025 KKP டிரான்ஸ்போர்ட்ஸ். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டுள்ளன."
+        data-hi="© 2025 KKP ट्रांसपोर्ट्स. सर्वाधिकार सुरक्षित।"
+    >© 2025 KKP TRANSPORTS. All rights reserved.</div>
+</footer>
+
+    <script src="script.js"></script>
+    
+     
+</body>
+</html>
