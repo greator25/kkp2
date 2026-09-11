@@ -20,6 +20,101 @@
       }
     }
   </script>
+  <style>
+    /* 6 Way brand box — About section, below Company Particulars */
+    .sixway-heading {
+        text-align: center;
+        color: var(--taupe);
+        position: relative;
+        margin-bottom: 2.25rem;
+    }
+    .sixway-heading::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: var(--twine);
+    }
+    .sixway-box {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 2rem 2.5rem;
+        align-items: center;
+        background: var(--white);
+        border: 3px solid var(--twine);
+        border-radius: 15px;
+        padding: 2.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 8px 25px rgba(63, 53, 46, 0.1);
+    }
+    .sixway-mark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding-right: 2.5rem;
+        border-right: 1px solid rgba(199, 158, 114, 0.45);
+    }
+    .sixway-mark svg { display: block; }
+    .sixway-name {
+        font-weight: 700;
+        font-size: 1.25rem;
+        letter-spacing: 0.08em;
+        color: var(--taupe);
+    }
+    .sixway-tagline {
+        font-size: 0.7rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--twine);
+    }
+    .sixway-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.1rem;
+    }
+    .sixway-text h3 {
+        margin-bottom: 0;
+        color: var(--taupe);
+    }
+    .sixway-label {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--twine);
+        margin-bottom: 0.35rem;
+    }
+    .sixway-text p {
+        margin: 0;
+        color: var(--dark-gray);
+        max-width: 68ch;
+    }
+    .sixway-rule {
+        height: 1px;
+        background: rgba(199, 158, 114, 0.45);
+    }
+    @media (max-width: 768px) {
+        .sixway-box {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            text-align: center;
+            padding: 1.75rem 1.25rem;
+        }
+        .sixway-mark {
+            padding-right: 0;
+            padding-bottom: 1.5rem;
+            border-right: none;
+            border-bottom: 1px solid rgba(199, 158, 114, 0.45);
+            width: 100%;
+        }
+        .sixway-text { text-align: left; }
+    }
+  </style>
 </head>
 <body>
     <!-- Header -->
@@ -250,6 +345,41 @@
                 <div class="info-item">
                     <strong>GSTIN Number:</strong>
                     <span>33AALFK4322J1ZE</span>
+                </div>
+            </div>
+        </div>
+        <h3 class="sixway-heading" data-en="Our Brand" data-ta="எங்கள் பிராண்ட்" data-hi="हमारा ब्रांड">Our Brand</h3>
+        <div class="sixway-box">
+            <div class="sixway-mark">
+                <svg width="86" height="86" viewBox="0 0 44 44" role="img" aria-label="6 Way logo">
+                    <polygon points="22,3 38,12.5 38,31.5 22,41 6,31.5 6,12.5"
+                             fill="none" stroke="#c79e72" stroke-width="2"></polygon>
+                    <polygon points="22,7.5 34,14.7 34,29.3 22,36.5 10,29.3 10,14.7"
+                             fill="none" stroke="#c79e72" stroke-width="0.8" opacity="0.6"></polygon>
+                    <text x="22" y="29" text-anchor="middle" font-family="'Noto Sans', Arial, sans-serif"
+                          font-size="19" font-weight="700" fill="#3f352e">6</text>
+                </svg>
+                <div class="sixway-name">6 WAY</div>
+                <div class="sixway-tagline" data-en="Drive · Deliver · Done" data-ta="ஓட்டு · வழங்கு · முடி" data-hi="चलाएँ · पहुँचाएँ · पूरा करें">Drive · Deliver · Done</div>
+            </div>
+            <div class="sixway-text">
+                <h3 data-en="6 Way Driver App" data-ta="6 வே ஓட்டுநர் செயலி" data-hi="6 वे ड्राइवर ऐप">6 Way Driver App</h3>
+                <div>
+                    <span class="sixway-label" data-en="About 6 Way" data-ta="6 வே பற்றி" data-hi="6 वे के बारे में">About 6 Way</span>
+                    <p data-en="A driver-first app for trips, loads, documents and payments — all on one screen."
+                       data-ta="பயணங்கள், சரக்கு, ஆவணங்கள் மற்றும் பணப் பரிவர்த்தனைகள் அனைத்தையும் ஒரே திரையில் வழங்கும், ஓட்டுநருக்கு முதன்மை தரும் செயலி."
+                       data-hi="यात्राओं, लोड, दस्तावेज़ों और भुगतान — सब कुछ एक ही स्क्रीन पर देने वाला, ड्राइवर-केंद्रित ऐप।">
+                       A driver-first app for trips, loads, documents and payments — all on one screen.
+                    </p>
+                </div>
+                <div class="sixway-rule"></div>
+                <div>
+                    <span class="sixway-label" data-en="A brand of KKP Transports" data-ta="KKP டிரான்ஸ்போர்ட்ஸின் பிராண்ட்" data-hi="KKP ट्रांसपोर्ट्स का ब्रांड">A brand of KKP Transports</span>
+                    <p data-en="KKP Transports runs open body vehicles, trailers and containers with real-time GPS tracking on every load. 6 Way is its own driver app, used on every trip from assignment to payout."
+                       data-ta="KKP டிரான்ஸ்போர்ட்ஸ் திறந்த லாரிகள், டிரெய்லர்கள் மற்றும் கண்டெய்னர்களை இயக்குகிறது — ஒவ்வொரு சரக்கிலும் நேரடி GPS கண்காணிப்புடன். 6 வே என்பது இதன் சொந்த ஓட்டுநர் செயலி, ஒவ்வொரு பயணத்திலும் ஒப்படைப்பு முதல் பணம் வரை பயன்படுத்தப்படுகிறது."
+                       data-hi="KKP ट्रांसपोर्ट्स खुले ट्रक, ट्रेलर और कंटेनर चलाता है — हर लोड पर रियल-टाइम GPS ट्रैकिंग के साथ। 6 वे इसका अपना ड्राइवर ऐप है, जो हर ट्रिप में असाइनमेंट से भुगतान तक इस्तेमाल होता है।">
+                       KKP Transports runs open body vehicles, trailers and containers with real-time GPS tracking on every load. 6 Way is its own driver app, used on every trip from assignment to payout.
+                    </p>
                 </div>
             </div>
         </div>
