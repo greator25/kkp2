@@ -20,6 +20,111 @@
       }
     }
   </script>
+  <style>
+    /* 6 Way brand box — About section, below Company Particulars */
+    .sixway-heading {
+        text-align: center;
+        color: var(--taupe);
+        position: relative;
+        margin-bottom: 2.25rem;
+    }
+    .sixway-heading::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 3px;
+        background: var(--twine);
+    }
+    .sixway-box {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        gap: 2rem 2.5rem;
+        align-items: center;
+        background: var(--white);
+        border: 3px solid var(--twine);
+        border-radius: 15px;
+        padding: 2.5rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 8px 25px rgba(63, 53, 46, 0.1);
+    }
+    .sixway-mark {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        padding-right: 2.5rem;
+        border-right: 1px solid rgba(199, 158, 114, 0.45);
+    }
+    .sixway-mark img { display: block; }
+    .sixway-name {
+        font-weight: 700;
+        font-size: 1.25rem;
+        letter-spacing: 0.08em;
+        color: var(--taupe);
+    }
+    .sixway-tagline {
+        font-size: 0.7rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--twine);
+    }
+    .sixway-text {
+        display: flex;
+        flex-direction: column;
+        gap: 1.1rem;
+    }
+    .sixway-text h3 {
+        margin-bottom: 0;
+        color: var(--taupe);
+    }
+    .sixway-label {
+        display: block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--twine);
+        margin-bottom: 0.35rem;
+    }
+    .sixway-text p {
+        margin: 0;
+        color: var(--dark-gray);
+        max-width: 68ch;
+    }
+    .sixway-text h3.sixway-title {
+        font-weight: 700;
+    }
+    .sixway-footer {
+        grid-column: 1 / -1;
+        margin: 0;
+        text-align: center;
+        font-weight: 700;
+        color: #000;
+    }
+    .sixway-rule {
+        height: 1px;
+        background: rgba(199, 158, 114, 0.45);
+    }
+    @media (max-width: 768px) {
+        .sixway-box {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            text-align: center;
+            padding: 1.75rem 1.25rem;
+        }
+        .sixway-mark {
+            padding-right: 0;
+            padding-bottom: 1.5rem;
+            border-right: none;
+            border-bottom: 1px solid rgba(199, 158, 114, 0.45);
+            width: 100%;
+        }
+        .sixway-text { text-align: left; }
+    }
+  </style>
 </head>
 <body>
     <!-- Header -->
@@ -215,7 +320,7 @@
                 </div>
                 <div class="ceo-details">
                     <div class="ceo-name" data-en="K.K.PANNEER SELVAM" data-ta="கே. கே. பன்னீர் செல்வம்" data-hi="के. के. पनीर सेल्वम">Mr.K.K.PANNEER SELVAM</div>
-                    <div class="ceo-title" data-en="Founder & CEO" data-ta="நிறுவனர் மற்றும் தலைமை செயலாளர்" data-hi="संस्थापक और मुख्य कार्यकारी अधिकारी ">Founder & CEO</div>
+                    <div class="ceo-title" data-en="Managing Partner & CEO" data-ta="நிர்வாக பங்குதாரர் மற்றும் தலைமை செயலாளர்" data-hi="प्रबंध साझेदार और मुख्य कार्यकारी अधिकारी ">Managing Partner & CEO</div>
                     <div class="ceo-experience" data-en="20+ Years in Transportation Industry" data-ta="போக்குவரத்து துறையில் 20+ ஆண்டுகள்" data-hi="परिवहन उद्योग में 20+ वर्ष">20+ Years in Transportation Industry</div>
                     <div class="ceo-info">
                         <h3 data-en="Leadership" data-ta="தலைமை" data-hi="नेतृत्व">Leadership</h3>
@@ -252,6 +357,40 @@
                     <span>33AALFK4322J1ZE</span>
                 </div>
             </div>
+        </div>
+        <h3 class="sixway-heading" data-en="Our Brand" data-ta="எங்கள் பிராண்ட்" data-hi="हमारा ब्रांड">Our Brand</h3>
+        <div class="sixway-box">
+            <div class="sixway-mark">
+                <img src="assets/6way-logo.png" width="88" height="100" alt="6 Way logo">
+                <div class="sixway-name">6 WAY</div>
+                <div class="sixway-tagline" data-en="Drive · Deliver · Done" data-ta="ஓட்டு · வழங்கு · முடி" data-hi="चलाएँ · पहुँचाएँ · पूरा करें">Drive · Deliver · Done</div>
+            </div>
+            <div class="sixway-text">
+                <h3 class="sixway-title" data-en="6 Way" data-ta="6 வே" data-hi="6 वे">6 Way</h3>
+                <div>
+                    <span class="sixway-label" data-en="About 6 Way" data-ta="6 வே பற்றி" data-hi="6 वे के बारे में">About 6 Way</span>
+                    <p data-en="A driver-first app for trips, loads, documents and payments — all on one screen."
+                       data-ta="பயணங்கள், சரக்கு, ஆவணங்கள் மற்றும் பணப் பரிவர்த்தனைகள் அனைத்தையும் ஒரே திரையில் வழங்கும், ஓட்டுநருக்கு முதன்மை தரும் செயலி."
+                       data-hi="यात्राओं, लोड, दस्तावेज़ों और भुगतान — सब कुछ एक ही स्क्रीन पर देने वाला, ड्राइवर-केंद्रित ऐप।">
+                       A driver-first app for trips, loads, documents and payments — all on one screen.
+                    </p>
+                </div>
+                <div class="sixway-rule"></div>
+                <div>
+                    <span class="sixway-label" data-en="A brand of KKP Transports" data-ta="KKP டிரான்ஸ்போர்ட்ஸின் பிராண்ட்" data-hi="KKP ट्रांसपोर्ट्स का ब्रांड">A brand of KKP Transports</span>
+                    <p data-en="KKP Transports runs open body vehicles, trailers and containers with real-time GPS tracking on every load. 6 Way is its own driver app, used on every trip from assignment to payout."
+                       data-ta="KKP டிரான்ஸ்போர்ட்ஸ் திறந்த லாரிகள், டிரெய்லர்கள் மற்றும் கண்டெய்னர்களை இயக்குகிறது — ஒவ்வொரு சரக்கிலும் நேரடி GPS கண்காணிப்புடன். 6 வே என்பது இதன் சொந்த ஓட்டுநர் செயலி, ஒவ்வொரு பயணத்திலும் ஒப்படைப்பு முதல் பணம் வரை பயன்படுத்தப்படுகிறது."
+                       data-hi="KKP ट्रांसपोर्ट्स खुले ट्रक, ट्रेलर और कंटेनर चलाता है — हर लोड पर रियल-टाइम GPS ट्रैकिंग के साथ। 6 वे इसका अपना ड्राइवर ऐप है, जो हर ट्रिप में असाइनमेंट से भुगतान तक इस्तेमाल होता है।">
+                       KKP Transports runs open body vehicles, trailers and containers with real-time GPS tracking on every load. 6 Way is its own driver app, used on every trip from assignment to payout.
+                    </p>
+                </div>
+            </div>
+            <p class="sixway-footer"
+               data-en="6 Way App is operated and managed by KKP Transport."
+               data-ta="6 வே செயலி KKP டிரான்ஸ்போர்ட் மூலம் இயக்கப்பட்டு நிர்வகிக்கப்படுகிறது."
+               data-hi="6 वे ऐप KKP ट्रांसपोर्ट द्वारा संचालित और प्रबंधित है।">
+               6 Way App is operated and managed by KKP Transport.
+            </p>
         </div>
     </div>
 </section>
@@ -351,10 +490,10 @@
                             <img src="assets/12wheelnew.jpg" alt="12 wheel" class="rectangle-img">
                             <span  class="vehicle-name" data-en="12 wheel - 25 ton" data-ta="12 சக்கரம் - 25 டன்" data-hi="12 पहिया - 25 टन">12 wheel - 25 ton</span>
                         </div>
-                        <div class="vehicle-item">
+                        <!-- <div class="vehicle-item">
                             <img src="assets/14w.png" alt="14 wheel" class="rectangle-img">
                             <span  class="vehicle-name" data-en="14 wheel - 30 ton" data-ta="14 சக்கரம் - 30 டன்" data-hi="14 पहिया - 30 टन">14 wheel - 30 ton</span>
-                        </div>
+                        </div> -->
                         <div class="vehicle-item">
                             <img src="assets/16w.png" alt="16 wheel" class="rectangle-img">
                             <span  class="vehicle-name" data-en="16 wheel - 35 ton" data-ta="16 சக்கரம் - 35 டன்" data-hi="16 पहिया - 35 टन">16 wheel - 35 ton</span>
